@@ -179,7 +179,7 @@ body {
         font-size: 1.75rem;
     }
 
-    .primary-header div > button {
+    .mobile-nav-toggle {
         display: block;
         position: absolute;
         z-index: 2000;
@@ -188,6 +188,10 @@ body {
         background: transparent;
         border: 0;
         background-image: url(./starter-code/assets/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 1.5rem;
+        height: 1.0625rem;
     }
 }
 
