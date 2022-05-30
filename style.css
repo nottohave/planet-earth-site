@@ -166,7 +166,14 @@ body {
 /* ------------------- */
 
 @media (max-width: 35rem) {
+    .primary-navigation {
+        list-style: none;
 
+    }
+
+    .primary-navigation li {
+        height: 4.125rem;
+    }
 
     .primary-header div {
         justify-content: space-between;
