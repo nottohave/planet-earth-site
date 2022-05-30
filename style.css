@@ -1,0 +1,193 @@
+:root {
+    /* colors */
+    --clr-white: 0 0% 100%;
+    --clr-black: 240 67% 8%;
+    --clr-grey: 240 17% 26%;
+    --clr-lightgrey: 240 6% 54%;
+    --clr-cyan: 194 48% 49%;
+    --clr-yellow: 33 82% 61%;
+    --clr-purple: 263 67% 51%;
+    --clr-orange: 10 63% 51%;
+    --clr-red: 2 68% 53%;
+    --clr-brown: 17 73% 46%;
+    --clr-mint: 169 73% 44%;
+    --clr-blue: 222 87% 56%;
+
+    /* font-sizes */
+    --fs-900: 5rem;
+    --fs-800: 2.5rem;
+    --fs-750: 0.875rem;
+    --fs-700: 0.75rem; /* 12px */
+    --fs-600: 0.6875rem; /* 11px */
+
+    /* font-families */
+    --ff-serif: "Antonio", serif;
+    --ff-sans-cond: "Spartan Bold", sans-serif;
+    --ff-sans-normal: "Spartan Regular", sans-serif;
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+
+/* color */
+.bg-white { background-color: hsl( var(--clr-white));}
+.bg-black { background-color: hsl( var(--clr-black));}
+.bg-grey { background-color: hsl( var(--clr-grey));}
+.bg-lightgrey { background-color: hsl( var(--clrlightgreye));}
+.bg-cyan { background-color: hsl( var(--clr-cyan));}
+.bg-yellow{ background-color: hsl( var(--clr-yellow));}
+.bg-purple { background-color: hsl( var(--clr-purple));}
+.bg-orange { background-color: hsl( var(--clr-orange));}
+.bg-red { background-color: hsl( var(--clr-red));}
+.bg-brown { background-color: hsl( var(--clr-brown));}
+.bg-mint { background-color: hsl( var(--clr-mint));}
+.bg-blue { background-color: hsl( var(--clr-blue));}
+
+.text-white { color: hsl( var(--clr-white) );}
+.text-black { color: hsl( var(--clr-black) );}
+
+/* typography */
+
+.ff-serif { font-family: var(--ff-serif);}
+.ff-sans-cond { font-family: var(--ff-sans-cond);}
+.ff-sans-normal { font-family: var(--ff-sans-normal);}
+
+.letter-spacing-1 { letter-spacing: -1.5px;}
+.letter-spacing-2 { letter-spacing: 2.6px;}
+.letter-spacing-3 { letter-spacing: 1px;}
+
+.uppercase { text-transform: uppercase}
+
+.fs-900 { font-size: var(--fs-900); }
+.fs-800 { font-size: var(--fs-800); }
+.fs-750 { font-size: var(--fs-750); }
+.fs-700 { font-size: var(--fs-700); }
+.fs-600 { font-size: var(--fs-600); }
+
+
+/* ---------------------- */
+/* Utility classes */
+/* ---------------------- */
+
+/* general */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.clr-title {
+    height: 8.6875rem;
+    width: 15.94rem;
+    flex-direction: column;
+}
+
+.ind-clr-title {
+    height: 4.5rem;
+    width: 100%;
+}
+
+/* numbered title for numbers */
+.numbered-title {
+    font-family: var(--ff-serif);
+    font-size: var(--fs-800);
+    text-transform: uppercase;
+    color: hsl( var(--clr-grey));
+    letter-spacing: -1.5px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ------------------- */
+/* Set up body         */
+/* ------------------- */
+body {
+    font-family: var(--ff-serif);
+    font-size: var(--fs-400);
+    color: hsl( var(--clr-white) );
+    background-color: hsl( var(--clr-black) );
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    overflow: auto;
+}
+
+
+/* ------------------- */
+/* Header              */
+/* ------------------- */
+
+@media (max-width: 35rem) {
+
+
+    .primary-header div {
+        justify-content: space-between;
+        line-height: 2.25rem;
+        padding: 1.5rem;
+        border-bottom: 1px #979797 solid;
+    }
+
+    .primary-header div > h1 {
+        font-size: 1.75rem;
+    }
+
+    .primary-header div > button {
+        display: block;
+        position: absolute;
+        z-index: 2000;
+        right: 1rem;
+        top: 2rem;
+        background: transparent;
+        border: 0;
+        background-image: url(./starter-code/assets/icon-hamburger.svg);
+    }
+}
+
