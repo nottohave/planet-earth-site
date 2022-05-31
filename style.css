@@ -180,7 +180,7 @@ body {
         gap: 0rem;
     }
 
-    .primary-navigation li:not(:first-child) {
+    .primary-navigation li {
         height: 4.125rem;
         display: flex;
         flex-direction: row;
@@ -189,9 +189,6 @@ body {
         align-items: center;
     }
 
-    .primary-navigation span {
-        color: ;
-    }
 
     .primary-header-nav {
         justify-content: space-between;
