@@ -177,25 +177,41 @@ body {
         inset: 10% 0 0 0;
         z-index: 1000;
         background-color: hsl( var(--clr-black) );
+        gap: 0rem;
     }
 
-    .primary-navigation li {
+    .primary-navigation li:not(:first-child) {
         height: 4.125rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         border-bottom: 1px #979797 solid;
+        align-items: center;
     }
 
-    .primary-header div {
+    .primary-navigation span {
+        color: ;
+    }
+
+    .primary-header-nav {
         justify-content: space-between;
         line-height: 2.25rem;
         padding: 1.5rem;
         border-bottom: 1px #979797 solid;
     }
 
-    .primary-header div > h1 {
+    .primary-header-nav > h1 {
         font-size: 1.75rem;
+    }
+
+    .planet-tabs svg {
+        margin-right: 1.5625rem;
+    }
+
+    .planet-tabs a {
+        text-decoration: none;
+        font-weight: 700;
+        line-height: 1.5636rem;
     }
 
     .mobile-nav-toggle {
@@ -212,5 +228,7 @@ body {
         width: 1.5rem;
         height: 1.0625rem;
     }
+
+    
 }
 
