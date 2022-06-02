@@ -184,7 +184,7 @@ body {
         justify-content: space-between;
         line-height: 2.25rem;
         padding: 1.5rem;
-        border-bottom: 1px #979797 solid;
+        border-bottom: 1px #97979792 solid;
     }
 
     .primary-header-nav > h1 {
@@ -235,6 +235,8 @@ body {
         justify-content: space-between;
         padding-inline: 1.5rem;
         height: 3.0625rem;
+        border-bottom: 1px #97979792 solid;
+
     }
 
     .mbl-planet-name button {
@@ -244,8 +246,19 @@ body {
         color: white;
         font-weight: 700;
         letter-spacing: 2px;
+        text-align: center;
     }
 
+    .mbl-planet-name button:hover {
+        cursor: pointer;
+    }
+
+    /* PLANET BODY */
+
+    .planet-body {
+        display: grid;
+        grid-template-rows: min-content 1fr min-content;
+    }
     
 }
 
