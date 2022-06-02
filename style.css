@@ -251,6 +251,7 @@ body {
 
     .mbl-planet-name button:hover {
         cursor: pointer;
+        border-bottom: 4px #419EBB solid;
     }
 
     /* PLANET BODY */
@@ -258,7 +259,39 @@ body {
     .planet-body {
         display: grid;
         grid-template-rows: min-content 1fr min-content;
+        background: url(./starter-code/assets/background-stars.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
+
+    .planet-img {
+        height: 19rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .planet-img img {
+        height: 7rem;
+        width: 7rem;
+    }
+
+    .planet-infos {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .planet-infos p {
+        max-width: 55ch;
+        line-height: 1.375rem;
+    }
+
+    .planet-infos p:last-child {
+        opacity: 0.5;
+        text-decoration: none;
+        
+    }
+
     
 }
 
