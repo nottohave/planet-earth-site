@@ -289,7 +289,12 @@ body {
     .planet-infos p:last-child {
         opacity: 0.5;
         text-decoration: none;
-        
+
+    }
+
+    /* PLANET STATS */
+    .planet-stats {
+        flex-direction: column;
     }
 
     
