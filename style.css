@@ -231,6 +231,11 @@ body {
         height: 1.0625rem;
     }
 
+    .mbl-planet-name {
+        justify-content: space-between;
+        padding-inline: 1.5rem;
+    }
+
     
 }
 
