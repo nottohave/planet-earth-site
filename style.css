@@ -180,16 +180,6 @@ body {
         gap: 0rem;
     }
 
-    .primary-navigation li {
-        height: 4.125rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border-bottom: 1px #97979732 solid;
-        align-items: center;
-    }
-
-
     .primary-header-nav {
         justify-content: space-between;
         line-height: 2.25rem;
@@ -201,6 +191,18 @@ body {
         font-size: 1.75rem;
     }
 
+    .primary-navigation li {
+        height: 4.125rem;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px #97979732 solid;
+        align-items: center;
+    }
+
+    .planet-tabs {
+        width: 100%;
+    }
+
     .planet-tabs svg {
         margin-right: 1.5625rem;
     }
@@ -209,6 +211,9 @@ body {
         text-decoration: none;
         font-weight: 700;
         line-height: 1.5636rem;
+        display: inline-block;
+        width: 80%;
+        font-size: 1.3rem;
     }
 
     .mobile-nav-toggle {
