@@ -234,6 +234,16 @@ body {
     .mbl-planet-name {
         justify-content: space-between;
         padding-inline: 1.5rem;
+        height: 3.0625rem;
+    }
+
+    .mbl-planet-name button {
+        height: 100%;
+        border: 0;
+        background:hsl( var(--clr-black) );
+        color: white;
+        font-weight: 700;
+        letter-spacing: 2px;
     }
 
     
