@@ -288,9 +288,14 @@ body {
         align-items: center;
     }
 
-    .planet-img img {
+    .mercury {
         height: 7rem;
         width: 7rem;
+    }
+
+    .venus {
+        height: 9.625rem;
+        width: 9.625rem;
     }
 
     .planet-infos {
