@@ -262,10 +262,11 @@ body {
         background: url(./starter-code/assets/background-stars.svg);
         background-repeat: no-repeat;
         background-size: cover;
+        gap: 1rem;
     }
 
     .planet-img {
-        height: 19rem;
+        height: 18rem;
         justify-content: center;
         align-items: center;
     }
@@ -295,6 +296,11 @@ body {
     /* PLANET STATS */
     .planet-stats {
         flex-direction: column;
+        padding-inline: 1.5rem;
+    }
+
+    .planet-stats p {
+        border: 1px #97979792 solid;
     }
 
     
