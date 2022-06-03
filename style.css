@@ -162,22 +162,39 @@ body {
     overflow: auto;
 }
 
+/* HEADER  */
+.mobile-nav-toggle {
+    display: none;
+}
+
+.tbldsk-planet-name {
+    display: none;
+}
 
 /* ------------------- */
-/* Header              */
+/* Header Mobile       */
 /* ------------------- */
 
 @media (max-width: 35rem) {
+
     .primary-navigation {
         --underline-gap: 0.75rem;
         padding: 2.75rem 1.5rem 0rem 1.5rem;
         list-style: none;
         flex-direction: column;
-        /* position: fixed; */
+        position: fixed;
         inset: 10% 0 0 0;
         z-index: 1000;
         background-color: hsl( var(--clr-black) );
         gap: 0rem;
+
+        transform: translateX(100%);
+        transition: 0.5s;
+    }
+
+    .primary-navigation[data-visible="true"] {
+        transform: translateY(0);
+        transition: 0.5s;
     }
 
     .primary-header-nav {
@@ -290,7 +307,6 @@ body {
     .planet-infos p:last-child {
         opacity: 0.5;
         text-decoration: none;
-
     }
 
     /* PLANET STATS */
@@ -301,7 +317,19 @@ body {
 
     .planet-stats p {
         border: 1px #97979792 solid;
+        height: 3rem;
+        align-items: center;
+        padding-inline: 1rem;
+        justify-content: space-between;
+        font-size: 1.25rem;
     }
+
+    .planet-stats p span {
+        font-weight: 700;
+        opacity: 0.5;
+    }
+
+
 
     
 }
