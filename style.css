@@ -298,6 +298,11 @@ body {
         width: 9.625rem;
     }
 
+    .earth {
+        height: 10.8125rem;
+        width: 10.8125rem;
+    }
+
     .planet-infos {
         text-align: center;
         flex-direction: column;
