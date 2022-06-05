@@ -172,7 +172,7 @@ body {
 }
 
 /* ------------------- */
-/* Header Mobile       */
+/* Mobile              */
 /* ------------------- */
 
 @media (max-width: 35rem) {
@@ -339,8 +339,8 @@ body {
         opacity: 0.5;
     }
 
-
-
-    
 }
+
+
+@media (max-width: )
 
