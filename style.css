@@ -162,13 +162,36 @@ body {
     overflow: auto;
 }
 
-/* HEADER  */
+/* HEADER Universal  */
 .mobile-nav-toggle {
     display: none;
 }
 
-.tbldsk-planet-name {
+.planet-tabs a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.primary-navigation {
+    list-style: none;
+    gap: 0rem;
+}
+
+.primary-navigation li {
+    margin-inline: 0.5rem;
+    cursor: pointer;
+}
+
+.primary-navigation li svg {
     display: none;
+}
+
+.planet-name {
+    font-size: var(--fs-600);
+}
+
+.primary-header {
+    border-bottom: 1px #97979792 solid;
 }
 
 /* ------------------- */
@@ -176,6 +199,10 @@ body {
 /* ------------------- */
 
 @media (max-width: 35rem) {
+
+    .tbldsk-planet-name {
+        display: none;
+    }    
 
     .primary-navigation {
         --underline-gap: 0.75rem;
@@ -225,7 +252,6 @@ body {
     }
 
     .planet-tabs a {
-        text-decoration: none;
         font-weight: 700;
         line-height: 1.5636rem;
         display: inline-block;
@@ -341,6 +367,23 @@ body {
 
 }
 
+/* ------------------- */
+/* Tablet              */
+/* ------------------- */
 
-@media (max-width: )
+
+@media (max-width: 50rem) {
+
+    /* HEADER */
+    .primary-header-nav h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 1.75rem;
+        padding: 1rem 0 0 0;
+    }
+
+    .mbl-planet-name {
+        display: none;
+    }
+}
 
