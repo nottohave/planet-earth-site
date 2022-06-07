@@ -175,6 +175,8 @@ body {
 .primary-navigation {
     list-style: none;
     gap: 0rem;
+    padding-inline: 3.1875rem;
+    justify-content: center;
 }
 
 .primary-navigation li {
@@ -193,6 +195,44 @@ body {
 .primary-header {
     border-bottom: 1px #97979792 solid;
 }
+
+.planet-img {
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------- */
+/* Tablet              */
+/* ------------------- */
+
+
+
+@media (max-width: 50rem) {
+
+    /* HEADER */
+    .primary-header-nav h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 1.75rem;
+        padding: 1rem 0 0 0;
+    }
+
+    .mbl-planet-name {
+        display: none;
+    }
+
+    /* BODY */
+    .planet-img {
+        height: 28.8125rem;
+    }
+    
+    .mercury {
+        height: 11.5rem;
+        width: 11.5rem;
+    }
+
+}
+
 
 /* ------------------- */
 /* Mobile              */
@@ -308,11 +348,6 @@ body {
         gap: 1rem;
     }
 
-    .planet-img {
-        height: 18rem;
-        justify-content: center;
-        align-items: center;
-    }
 
     .mercury {
         height: 7rem;
@@ -367,23 +402,4 @@ body {
 
 }
 
-/* ------------------- */
-/* Tablet              */
-/* ------------------- */
-
-
-@media (max-width: 50rem) {
-
-    /* HEADER */
-    .primary-header-nav h1 {
-        width: 100%;
-        text-align: center;
-        font-size: 1.75rem;
-        padding: 1rem 0 0 0;
-    }
-
-    .mbl-planet-name {
-        display: none;
-    }
-}
 
