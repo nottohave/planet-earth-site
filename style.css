@@ -176,7 +176,7 @@ body {
     list-style: none;
     gap: 0rem;
     padding-inline: 3.1875rem;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .primary-navigation li {
