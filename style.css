@@ -206,11 +206,9 @@ body {
 }
 
 .planet-infos-body {
-    width: 50%;
     text-align: left;
     flex-direction: column;
     align-items: center;
-    padding-inline: 2rem;
 }
 
 .planet-infos-body h2 {
@@ -269,6 +267,30 @@ body {
 }
 
 
+/* --------------- */
+/* PLANET FOOTER DESKTOP */
+/* --------------- */
+
+.planet-stats {
+    flex-direction: row;
+    padding-inline: 1.5rem;
+    margin-top: 2.0625rem;
+}
+
+.planet-stats p {
+    border: 1px #97979792 solid;
+    align-items: center;
+    padding-inline: 1rem;
+    justify-content: space-between;
+    font-size: 1.25rem;
+}
+
+.planet-stats p span {
+    font-weight: 700;
+    opacity: 0.5;
+    
+}
+
 
 /* ------------------- */
 /* Tablet              */
@@ -289,6 +311,10 @@ body {
     }
 
     /* BODY */
+    .planet-body {
+        padding-bottom: 2rem;;
+    }
+
     .planet-img {
         height: 26.8125rem;
     }
@@ -298,7 +324,21 @@ body {
         width: 11.5rem;
     }
 
+    .planet-infos {
+        justify-content: space-around;
+    }
+
     .planet-infos-body {
+        flex-direction: column;
+    }
+
+    .planet-stats {
+        justify-content: space-between;
+        padding-inline: 2rem;
+    }
+
+    .planet-stats p {
+        height: 5rem;
         flex-direction: column;
     }
 
@@ -417,9 +457,7 @@ body {
         background: url(./starter-code/assets/background-stars.svg);
         background-repeat: no-repeat;
         background-size: cover;
-        gap: 1rem;
     }
-
 
     .mercury {
         height: 7rem;
@@ -454,6 +492,7 @@ body {
         height: 3rem;
         align-items: center;
         padding-inline: 1rem;
+        flex-direction: row;
         justify-content: space-between;
         font-size: 1.25rem;
     }
