@@ -177,11 +177,23 @@ body {
     
 }
 
+.primary-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 1rem;
+}
+
+.primary-header-nav {
+    max-width: 10rem;
+}
+
 .primary-navigation {
     list-style: none;
     gap: 0rem;
     padding-inline: 3.1875rem;
     justify-content: space-between;
+    width: 42rem;
 }
 
 .primary-navigation li {
@@ -204,6 +216,10 @@ body {
 /* ------------------------ */
 /* PLANET BODY UNIVERSAL    */
 /* ------------------------ */
+
+.mbl-planet-name {
+    display: none;
+}
 
 .planet-img {
     justify-content: center;
@@ -274,9 +290,9 @@ body {
 }
 
 
-/* --------------- */
+/* ----------------------- */
 /* PLANET FOOTER DESKTOP */
-/* --------------- */
+/* ----------------------- */
 
 .planet-stats {
     flex-direction: row;
