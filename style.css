@@ -173,19 +173,27 @@ body {
 }
 
 /* add hover efect for text decoration anchor */
-.planet-tabs a:hover {
-    
+.planet-tabs:hover {
+    border-top: 3px solid #419EBB;
+}
+
+.planet-tabs a:active {
+
 }
 
 .primary-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1.6rem;
+    height: 5.25rem;
+    /* padding: 1.6rem; */
 }
 
 .primary-header-nav {
-    max-width: 10rem;
+    width: 10rem;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .primary-navigation {
@@ -472,6 +480,7 @@ body {
         width: 80%;
         font-size: 1.3rem;
     }
+
 
     .mobile-nav-toggle {
         display: block;
