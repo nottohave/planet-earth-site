@@ -250,7 +250,7 @@ body {
     text-align: left;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     height: min-content;
 }
 
@@ -262,7 +262,8 @@ body {
     max-width: 55ch;
     line-height: 1.375rem;
     letter-spacing: 1px;
-    opacity: 0.8;    
+    opacity: 0.8;
+    font-size: var(--fs-600);    
 }
 
 .overview-src,
