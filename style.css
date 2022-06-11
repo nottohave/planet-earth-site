@@ -172,15 +172,6 @@ body {
     cursor: pointer;
 }
 
-/* add hover efect for text decoration anchor */
-.planet-tabs:hover {
-    border-top: 3px solid #419EBB;
-}
-
-.planet-tabs a:active {
-
-}
-
 .primary-header {
     display: flex;
     flex-direction: row;
@@ -198,15 +189,31 @@ body {
 
 .primary-navigation {
     list-style: none;
-    gap: 0rem;
     padding-inline: 3.1875rem;
     justify-content: space-between;
     width: 42rem;
+    height: 100%;
+    margin: 0;
+    gap: 0rem;
+    align-items: center;
+}
+
+.underline-indicators > * {
+    border: 0;
+    border-top: 0.2rem solid #419EBB;
+    background-color: transparent;
+}
+
+.underline-indicators > *:hover {
+    border-color: ;
 }
 
 .primary-navigation li {
+    display: flex;
+    align-items: center;
     margin-inline: 0.5rem;
     cursor: pointer;
+    height: 100%;
 }
 
 .primary-navigation li svg {
