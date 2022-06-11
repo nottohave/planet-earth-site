@@ -221,15 +221,36 @@ body {
     display: none;
 }
 
+.planet-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-inline: 2rem;
+}
+
 .planet-img {
+    height: 41.125rem;
+    width: 50rem;
     justify-content: center;
     align-items: center;
 }
 
+.planet-img img {
+    max-height: 18.125rem;
+    min-height: 18.125rem;
+}
+
+.planet-infos {
+    flex-direction: column;
+    justify-content: center;
+}
+
 .planet-infos-body {
     text-align: left;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    height: min-content;
 }
 
 .planet-infos-body h2 {
@@ -261,9 +282,11 @@ body {
 }
 
 .tbldsk-planet-name {
-    flex-direction: column;
+    height: min-content;
     width: 17.5625rem;
+    flex-direction: column;
     justify-content: center;
+    
 }
 
 .tbldsk-planet-name button {
@@ -283,10 +306,14 @@ body {
     margin-right: 1.0625rem;
 }
 
-.tbldsk-planet-name button:hover,
-.tbldsk-planet-name button:active {
+.tbldsk-planet-name button:focus {
     cursor: pointer;
     background: hsl( var(--clr-cyan));
+}
+
+.tbldsk-planet-name button:hover {
+    cursor: pointer;
+    background: hsl( var(--clr-grey));
 }
 
 
@@ -298,20 +325,26 @@ body {
     flex-direction: row;
     padding-inline: 1.5rem;
     padding-top: 0.875rem;
-    margin-top: 2.0625rem;
+    /* margin-top: 2.0625rem; */
+    justify-content: center;
 }
 
 .planet-stats p {
     border: 1px #97979792 solid;
     padding-inline: 1rem;
     justify-content: center;
-    width: 10.25rem;
-    height: 5.5rem;
+    flex-direction: column;
+    font-size: 2.5rem;
+    height: 8rem;
+    width: 16rem;
+    /* width: 10.25rem; */
+    /* height: 5.5rem; */
 }
 
 .planet-stats p span {
     font-weight: 700;
     opacity: 0.5;
+    font-size: 0.6875rem;
 }
 
 
@@ -336,9 +369,12 @@ body {
     /* BODY */
     .planet-body {
         padding-bottom: 2rem;;
-    }
+    }    
 
     .planet-img {
+        justify-content: center;
+        align-items: center;
+
         height: 26.8125rem;
     }
     
