@@ -181,7 +181,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-inline: 1rem;
+    padding: 1.6rem;
 }
 
 .primary-header-nav {
@@ -243,6 +243,7 @@ body {
 .planet-infos {
     flex-direction: column;
     justify-content: center;
+    gap: 3rem;
 }
 
 .planet-infos-body {
@@ -323,10 +324,10 @@ body {
 
 .planet-stats {
     flex-direction: row;
-    padding-inline: 1.5rem;
+    padding-inline: 8rem;
     padding-top: 0.875rem;
     /* margin-top: 2.0625rem; */
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .planet-stats p {
