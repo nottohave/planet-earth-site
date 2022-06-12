@@ -200,12 +200,12 @@ body {
 
 .underline-indicators > * {
     border: 0;
-    border-top: 0.2rem solid #419EBB;
+    border-top: 0.2rem solid hsl( var(--clr-white) / 0);
     background-color: transparent;
 }
 
 .underline-indicators > *:hover {
-    border-color: ;
+    border-color: #419EBB;
 }
 
 .primary-navigation li {
