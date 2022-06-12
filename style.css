@@ -252,9 +252,9 @@ body {
     align-items: center;
 }
 
-.planet-img img {
-    max-height: 18.125rem;
-    min-height: 18.125rem;
+.mercury {
+    height: 18.125rem;
+    width: 18.125rem;
 }
 
 .planet-infos {
@@ -374,6 +374,10 @@ body {
 @media (max-width: 50rem) {
 
     /* HEADER */
+    .primary-header {
+        flex-direction: column;
+    }
+
     .primary-header-nav h1 {
         width: 100%;
         text-align: center;
@@ -385,9 +389,14 @@ body {
         display: none;
     }
 
+    .primary-navigation {
+        width: 100%;
+    }
+
     /* BODY */
     .planet-body {
-        padding-bottom: 2rem;;
+        padding-bottom: 2rem;
+        flex-direction: column;
     }    
 
     .planet-img {
@@ -403,7 +412,11 @@ body {
     }
 
     .planet-infos {
-        justify-content: space-around;
+        flex-direction: row;
+        width: unset;
+        justify-content: unset;;
+        /* justify-content: space-around; */
+        /* width: ; */
     }
 
     .planet-infos-body {
@@ -412,12 +425,12 @@ body {
 
     .planet-stats {
         justify-content: space-between;
-        padding-inline: 2rem;
+        /* padding-inline: 2rem; */
     }
 
     .planet-stats p {
         height: 5rem;
-        flex-direction: column;
+        width: 10.25rem;
         font-size: 1.5rem;
     }
 
