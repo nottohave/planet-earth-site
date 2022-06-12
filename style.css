@@ -200,11 +200,13 @@ body {
 
 .underline-indicators > * {
     border: 0;
-    border-top: 0.2rem solid hsl( var(--clr-white) / 0);
+    border-top: 0.3rem solid hsl( var(--clr-white) / 0);
     background-color: transparent;
 }
 
-.underline-indicators > *:hover {
+.underline-indicators > *:hover,
+.underline-indicators > *:active,
+.underline-indicators > *:focus {
     border-color: #419EBB;
 }
 
