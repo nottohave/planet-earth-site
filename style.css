@@ -445,7 +445,7 @@ body {
     .planet-stats {
         justify-content: space-evenly;
         padding-inline: 2rem;
-        padding-top: 0rem;
+        padding: 0 0 1rem 0;
         gap: 0rem;
     }
 
