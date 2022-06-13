@@ -378,12 +378,14 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 1.5rem;
+    }
+
+    .primary-header nav {
+        height: 100%;
     }
 
     .primary-header-nav {
         width: 100%;
-        height: unset;
     }
 
     .primary-header-nav h1 {
@@ -401,6 +403,12 @@ body {
         width: 100%;
         gap: 1.5rem;
     }
+
+    .underline-indicators > * {
+        border: 0;
+        border-bottom: 0.3rem solid hsl( var(--clr-white) / 0);
+    }
+        
 
     /* BODY */
     .planet-body {
