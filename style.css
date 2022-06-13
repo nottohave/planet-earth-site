@@ -159,7 +159,7 @@ body {
 
     display: grid;
     grid-template-rows: min-content 1fr;
-    overflow: auto;
+    overflow-x: hidden;
 }
 
 /* HEADER Universal  */
@@ -377,16 +377,17 @@ body {
         height: 10rem;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
     }
 
+    .primary-header-nav {
+        width: 100vw;
+        text-align: center;
+    }
     .primary-header nav {
         height: 100%;
     }
 
-    .primary-header-nav {
-        width: 100%;
-    }
 
     .primary-header-nav h1 {
         width: 100%;
@@ -400,8 +401,8 @@ body {
     }
 
     .primary-navigation {
-        width: 100%;
-        gap: 1.5rem;
+        width: 100vw;
+        /* gap: 1.5rem; */
     }
 
     .underline-indicators > * {
@@ -412,6 +413,7 @@ body {
 
     /* BODY */
     .planet-body {
+        padding-inline: unset;
         padding-bottom: 2rem;
         flex-direction: column;
     }    
@@ -431,7 +433,7 @@ body {
     .planet-infos {
         flex-direction: row;
         width: unset;
-        justify-content: unset;;
+        justify-content: center;;
         /* justify-content: space-around; */
         /* width: ; */
     }
