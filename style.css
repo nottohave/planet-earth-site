@@ -430,16 +430,23 @@ body {
         width: 11.5rem;
     }
 
+    .venus {
+        height: 16rem;
+        width: 16rem;
+    }
+
     .planet-infos {
         flex-direction: row;
         width: unset;
-        justify-content: center;;
-        /* justify-content: space-around; */
-        /* width: ; */
+        justify-content: space-around;;
     }
 
     .planet-infos-body {
         flex-direction: column;
+    }
+
+    .tbldsk-planet-name {
+        margin-top: 2rem;
     }
 
     .planet-stats {
