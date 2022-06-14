@@ -37,7 +37,7 @@
    </div>
 
     <nav>
-      <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
         <li>
           <div class="planet-tabs">
             <svg height="30" width="30">
@@ -58,7 +58,7 @@
               <circle cx="20" cy="20" r="10" stroke-width="3" fill="#F7CC7F" />
             </svg>
   
-            <a href="./starter-code/venus.html" class="planet-name ff-sans-cond uppercase text-white letter-spacing-3">Venus</a>
+            <a href="./venus.html" class="planet-name ff-sans-cond uppercase text-white letter-spacing-3">Venus</a>
   
           </div>
 
@@ -146,7 +146,7 @@
     </nav>
   </header>
 
-  <main class="planet-body">
+  <main>
     <section class="mbl-planet-name flex">
       <button class="overview ff-sans-cond fs-500 uppercase letter-spacing-2">overview</button>
       <button class="structure ff-sans-cond fs-500 uppercase letter-spacing-2">structure</button>
@@ -160,11 +160,13 @@
 
       <button class="structure">
         <span>02</span>
-        structure</button>
+        structure
+      </button>
 
       <button class="surface">
         <span>03</span>
-        surface</button>
+        surface
+      </button>
     </section>
 
 
@@ -173,50 +175,69 @@
         <img src="./assets/planet-venus.svg" class="venus" alt="Venus">
       </div>
 
-      <div class="planet-infos flex">
-        <h2 class="ff-serif fs-800 uppercase">Venus</h2>
+      <section class="planet-infos flex">
 
-        <p class="overview ff-sans-normal fs-600">
-          Venus is the second planet from the Sun. It is named after the 
-          Roman goddess of love and beauty. As the brightest natural object 
-          in Earth's night sky after the Moon, Venus can cast shadows and 
-          can be, on rare occasions, visible to the naked eye in broad daylight.
-        </p>
+        <div class="planet-infos-body flex">
+          <h2 class="ff-serif fs-800 uppercase">Venus</h2>
+  
+          <p class="overview ff-sans-normal fs-600">
+            Venus is the second planet from the Sun. It is named after the 
+            Roman goddess of love and beauty. As the brightest natural object 
+            in Earth's night sky after the Moon, Venus can cast shadows and 
+            can be, on rare occasions, visible to the naked eye in broad daylight.
+          </p>
+  
+          <p class="structure ff-sans-normal fs-600" style="display:none">
+            The similarity in size and density between Venus and Earth suggests 
+            they share a similar internal structure: a core, mantle, and crust. 
+            Like that of Earth, Venusian core is most likely at least partially 
+            liquid because the two planets have been cooling at about the same rate.
+          </p>
+  
+          <p class="surface ff-sans-normal fs-600" style="display:none">
+            Much of the Venusian surface appears to have been shaped by volcanic activity. 
+            Venus has several times as many volcanoes as Earth, and it has 167 large 
+            volcanoes that are over 100 km (60 mi) across. The only volcanic complex 
+            of this size on Earth is the Big Island of Hawaii.
+          </p>
+  
+          <p class="overview-src">
+            <span class="ff-sans-normal fs-600">Source: </span>
+            <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Mercury_(planet)" target="_blank">Wikipedia</a>
+            <img src="./assets/icon-source.svg" alt="planet information">
+          </p>
+  
+          <p class="structure-src" style="display:none">
+            <span class="ff-sans-normal fs-600">Source: </span>
+            <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" target="_blank">Wikipedia</a>
+            <img src="./assets/icon-source.svg" alt="source to internal structure">
+          </p>
+  
+          <p class="surface-src" style="display:none">
+            <span class="ff-sans-normal fs-600">Source: </span>
+            <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" target="_blank">Wikipedia</a>
+            <img src="./assets/icon-source.svg" alt="source to surface geology">
+          </p>
+        </div>
 
-        <p class="structure ff-sans-normal fs-600" style="display:none">
-          The similarity in size and density between Venus and Earth suggests 
-          they share a similar internal structure: a core, mantle, and crust. 
-          Like that of Earth, Venusian core is most likely at least partially 
-          liquid because the two planets have been cooling at about the same rate.
-        </p>
+        <section class="tbldsk-planet-name flex">
+          <button class="overview ff-sans-cond fs-500 uppercase">
+            <span>01</span> 
+            overview
+          </button>
+    
+          <button class="structure ff-sans-cond fs-500 uppercase">
+            <span>02</span>
+            internal structure</button>
+    
+          <button class="surface ff-sans-cond fs-500 uppercase">
+            <span>03</span>
+            surface geology</button>
+        </section>  
 
-        <p class="surface ff-sans-normal fs-600" style="display:none">
-          Much of the Venusian surface appears to have been shaped by volcanic activity. 
-          Venus has several times as many volcanoes as Earth, and it has 167 large 
-          volcanoes that are over 100 km (60 mi) across. The only volcanic complex 
-          of this size on Earth is the Big Island of Hawaii.
-        </p>
-
-        <p>
-          <span class="ff-sans-normal fs-600">Source: </span>
-          <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Venus" target="_blank">Wikipedia</a>
-          <img src="./assets/icon-source.svg" alt="source to the planet">
-        </p>
-
-        <p class="structure" style="display:none">
-          <span class="ff-sans-normal fs-600">Source: </span>
-          <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Venus#Internal_structure" target="_blank">Wikipedia</a>
-          <img src="./assets/icon-source.svg" alt="source to the planet">
-        </p>
-
-        <p class="surface" style="display:none">
-          <span class="ff-sans-normal fs-600">Source: </span>
-          <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Venus#Surface_geology" target="_blank">Wikipedia</a>
-          <img src="./assets/icon-source.svg" alt="source to the planet">
-        </p>
-
-
-      </div>
+  
+      </section>
+  
       
     </section>
 
