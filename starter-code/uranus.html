@@ -4,59 +4,241 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap" rel="stylesheet"> 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@400;700&display=swap" rel="stylesheet"> 
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="../style.css">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <!-- JS file -->
+  <script src="./javascript-files/navigation.js" defer></script>
   
   <title>Frontend Mentor | Planets fact site</title>
 </head>
 <body>
-  Uranus
 
-  <!-- Overview Content Start -->
+  <header class="primary-header">
+    
+    <div class="primary-header-nav flex">
+      <h1 class="uppercase letter-spacing-1">the planets</h1>
 
-  Uranus is the seventh planet from the Sun. Its name is a reference to the 
-  Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather 
-  of Ares. It has the third-largest planetary radius and fourth-largest planetary 
-  mass in the Solar System.
+      <!-- mobile menu -->
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+        <span class="sr-only">Menu</span>
+      </button>   
+   </div>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Uranus -->
+    <nav>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+        <li>
+          <div class="planet-tabs">
+            <svg height="30" width="30">
+              <circle cx="20" cy="20" r="10" stroke-width="3" fill="#DEF4FC" />
+            </svg> 
+  
+            <a href="../index.html" class="planet-name ff-sans-cond uppercase text-white letter-spacing-3">Mercury </a>
+  
+          </div>
 
-  <!-- Overview Content End -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
 
-  <!-- Internal Structure Content Start -->
+        </li>
 
-  The standard model of Uranus's structure is that it consists of three layers: a 
-  rocky (silicate/iron–nickel) core in the centre, an icy mantle in the middle and 
-  an outer gaseous hydrogen/helium envelope. The core is relatively small, with a 
-  mass of only 0.55 Earth masses.
+        <li>
+          <div class="planet-tabs">
+            <svg height="30" width="30">
+              <circle cx="20" cy="20" r="10" stroke-width="3" fill="#F7CC7F" />
+            </svg>
+  
+            <a href="./venus.html" class="planet-name ff-sans-cond uppercase text-white letter-spacing-3">Venus</a>
+  
+          </div>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Uranus#Internal_structure -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+        </li>
 
-  <!-- Internal Structure Content End -->
+        <li>
+          <div class="planet-tabs">
+            <svg height="30" width="30">
+            <circle cx="20" cy="20" r="10" stroke-width="3" fill="#545BFE" />
+            </svg>
 
-  <!-- Surface Geology Content Start -->
+            <a href="./earth.html" class="planet-name ff-sans-cond uppercase text-white letter-spacing-3">Earth</a>
+          </div>
 
-  The composition of Uranus's atmosphere is different from its bulk, consisting mainly 
-  of molecular hydrogen and helium. The helium molar fraction, i.e. the number of 
-  helium atoms per molecule of gas, is 0.15±0.03 in the upper troposphere.
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+        </li>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Uranus#Atmosphere -->
+        <li>
+          <div class="planet-tabs">
+            <svg height="30" width="30">
+              <circle cx="20" cy="20" r="10" stroke-width="3" fill="#FF6A45" />
+            </svg> 
 
-  <!-- Surface Geology Content End -->
+            <a href="./mars.html" class="planet-name ff-sans-cond uppercase text-white letter-spacing-3"> Mars </a>
 
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
+          </div>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+        </li>
 
-  Rotation Time
-  17.2 Hours
+        <li>
+          <div class="planet-tabs">
+            <svg height="30" width="30">
+              <circle cx="20" cy="20" r="10" stroke-width="3" fill="#ECAD7A" />
+            </svg> 
+  
+            <a href="./jupiter.html" class="planet-name ff-sans-cond uppercase text-white letter-spacing-3">Jupiter</a>
+  
+          </div>
 
-  Revolution Time
-  84 Years
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+        </li>
 
-  Radius
-  25,362 KM
+        <li>
+          <div class="planet-tabs">
+            <svg height="30" width="30">
+              <circle cx="20" cy="20" r="10" stroke-width="3" fill="#FCCB6B" />
+            </svg> 
+  
+            <a href="./saturn.html" class="planet-name ff-sans-cond uppercase text-white letter-spacing-3">Saturn</a>
+  
+          </div>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+        </li>
 
-  Average Temp.
-  -195°c
+        <li>
+          <div class="planet-tabs">
+            <svg height="30" width="30">
+              <circle cx="20" cy="20" r="10" stroke-width="3" fill="#65F0D5" />
+            </svg> 
+  
+            <a href="./uranus.html" class="planet-name ff-sans-cond uppercase text-white letter-spacing-3">Uranus</a>
+  
+          </div>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+        </li>
+
+        <li>
+          <div class="planet-tabs">
+            <svg height="30" width="30">
+              <circle cx="20" cy="20" r="10" stroke-width="3" fill="#497EFA" />
+            </svg> 
+  
+            <a href="./neptune.html" class="planet-name ff-sans-cond uppercase text-white letter-spacing-3">Neptune</a>
+  
+          </div>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="mbl-planet-name flex">
+      <button class="overview ff-sans-cond fs-500 uppercase letter-spacing-2">overview</button>
+      <button class="structure ff-sans-cond fs-500 uppercase letter-spacing-2">structure</button>
+      <button class="surface ff-sans-cond fs-500 uppercase letter-spacing-2">surface</button>
+    </section>
+
+    <section class="planet-body">
+      <div class="planet-img flex">
+        <img src="./assets/planet-uranus.svg" class="uranus" alt="uranus">
+      </div>
+
+      <section class="planet-infos flex">
+
+        <div class="planet-infos-body flex">
+          <h2 class="ff-serif fs-800 uppercase">Uranus</h2>
+  
+          <p class="overview ff-sans-normal fs-600">
+            Uranus is the seventh planet from the Sun. Its name is a reference to the 
+            Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather 
+            of Ares. It has the third-largest planetary radius and fourth-largest planetary 
+            mass in the Solar System.
+          </p>
+  
+          <p class="structure ff-sans-normal fs-600" style="display:none">
+            The standard model of Uranus's structure is that it consists of three layers: a 
+            rocky (silicate/iron–nickel) core in the centre, an icy mantle in the middle and 
+            an outer gaseous hydrogen/helium envelope. The core is relatively small, with a 
+            mass of only 0.55 Earth masses.
+          </p>
+  
+          <p class="surface ff-sans-normal fs-600" style="display:none">
+            The composition of Uranus's atmosphere is different from its bulk, consisting mainly 
+            of molecular hydrogen and helium. The helium molar fraction, i.e. the number of 
+            helium atoms per molecule of gas, is 0.15±0.03 in the upper troposphere.
+          </p>
+  
+          <p class="overview-src">
+            <span class="ff-sans-normal fs-600">Source: </span>
+            <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Uranus" target="_blank">Wikipedia</a>
+            <img src="./assets/icon-source.svg" alt="planet information">
+          </p>
+  
+          <p class="structure-src" style="display:none">
+            <span class="ff-sans-normal fs-600">Source: </span>
+            <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Uranus#Internal_structure" target="_blank">Wikipedia</a>
+            <img src="./assets/icon-source.svg" alt="source to internal structure">
+          </p>
+  
+          <p class="surface-src" style="display:none">
+            <span class="ff-sans-normal fs-600">Source: </span>
+            <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Uranus#Atmosphere" target="_blank">Wikipedia</a>
+            <img src="./assets/icon-source.svg" alt="source to surface geology">
+          </p>
+        </div>
+
+        <section class="tbldsk-planet-name flex">
+          <button class="overview ff-sans-cond fs-500 uppercase">
+            <span>01</span> 
+            overview
+          </button>
+    
+          <button class="structure ff-sans-cond fs-500 uppercase">
+            <span>02</span>
+            internal structure</button>
+    
+          <button class="surface ff-sans-cond fs-500 uppercase">
+            <span>03</span>
+            surface geology</button>
+        </section>  
+      </section>
+      
+    </section>
+
+    <section class="planet-stats flex ">
+      <p class="rotation flex ff-serif uppercase">
+        <span class="ff-sans-cond fs-500 letter-spacing-3">rotation time</span>
+        17.2 Hours
+      </p>
+      <p class="revolution flex ff-serif uppercase">
+        <span class="ff-sans-cond fs-500 letter-spacing-3">revolution time</span>
+        84 Years
+      </p>
+      <p class="radius flex ff-serif uppercase">
+        <span class="ff-sans-cond fs-500 letter-spacing-3">radius</span>
+        25,362 KM
+      </p>
+      <p class="ave-temp flex ff-serif uppercase">
+        <span class="ff-sans-cond fs-500 letter-spacing-3">average temp.</span>
+        -195°c
+      </p>
+    </section>
+  
+  </main>
 </body>
 </html>
