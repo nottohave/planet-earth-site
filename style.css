@@ -256,6 +256,38 @@ body {
     width: 18.125rem;
 }
 
+.venus {
+    height: 25rem;
+    width: 25rem;
+}
+
+.earth {
+    height: 28.2rem;
+    width: 28.2rem;
+}
+
+.mars {
+    height: 21rem;
+    width: 21rem;
+}
+
+.jupiter {
+    height: 36.4rem;
+    width: 36.4rem;
+}
+
+.saturn {
+    height: 41rem;
+    width: 41rem;
+}
+
+.uranus,
+.neptune {
+    height: 28.7rem;
+    width: 28.7rem;
+}
+
+
 .planet-infos {
     flex-direction: column;
     justify-content: center;
