@@ -4,60 +4,242 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap" rel="stylesheet"> 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@400;700&display=swap" rel="stylesheet"> 
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="../style.css">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <!-- JS file -->
+  <script src="./javascript-files/navigation.js" defer></script>
   
   <title>Frontend Mentor | Planets fact site</title>
 </head>
 <body>
-  Saturn
 
-  <!-- Overview Content Start -->
+  <header class="primary-header">
+    
+    <div class="primary-header-nav flex">
+      <h1 class="uppercase letter-spacing-1">the planets</h1>
 
-  Saturn is the sixth planet from the Sun and the second-largest in the Solar 
-  System, after Jupiter. It is a gas giant with an average radius of about 
-  nine and a half times that of Earth. It only has one-eighth the average 
-  density of Earth.
+      <!-- mobile menu -->
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+        <span class="sr-only">Menu</span>
+      </button>   
+   </div>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn -->
+    <nav>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+        <li>
+          <div class="planet-tabs">
+            <svg height="30" width="30">
+              <circle cx="20" cy="20" r="10" stroke-width="3" fill="#DEF4FC" />
+            </svg> 
+  
+            <a href="../index.html" class="planet-name ff-sans-cond uppercase text-white letter-spacing-3">Mercury </a>
+  
+          </div>
 
-  <!-- Overview Content End -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
 
-  <!-- Internal Structure Content Start -->
+        </li>
 
-  Despite consisting mostly of hydrogen and helium, most of Saturn's mass 
-  is not in the gas phase, because hydrogen becomes a non-ideal liquid 
-  when the density is above 0.01 g/cm3, which is reached at a radius 
-  containing 99.9% of Saturn's mass.
+        <li>
+          <div class="planet-tabs">
+            <svg height="30" width="30">
+              <circle cx="20" cy="20" r="10" stroke-width="3" fill="#F7CC7F" />
+            </svg>
+  
+            <a href="./venus.html" class="planet-name ff-sans-cond uppercase text-white letter-spacing-3">Venus</a>
+  
+          </div>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn#Internal_structure -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+        </li>
 
-  <!-- Internal Structure Content End -->
+        <li>
+          <div class="planet-tabs">
+            <svg height="30" width="30">
+            <circle cx="20" cy="20" r="10" stroke-width="3" fill="#545BFE" />
+            </svg>
 
-  <!-- Surface Geology Content Start -->
+            <a href="./earth.html" class="planet-name ff-sans-cond uppercase text-white letter-spacing-3">Earth</a>
+          </div>
 
-  The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% 
-  helium by volume. The planet's most famous feature is its prominent ring 
-  system, which is composed mostly of ice particles with a smaller amount 
-  of rocky debris and dust. 
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+        </li>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn#Atmosphere -->
+        <li>
+          <div class="planet-tabs">
+            <svg height="30" width="30">
+              <circle cx="20" cy="20" r="10" stroke-width="3" fill="#FF6A45" />
+            </svg> 
 
-  <!-- Surface Geology Content End -->
+            <a href="./mars.html" class="planet-name ff-sans-cond uppercase text-white letter-spacing-3"> Mars </a>
 
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
+          </div>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+        </li>
 
-  Rotation Time
-  10.8 Hours
+        <li>
+          <div class="planet-tabs">
+            <svg height="30" width="30">
+              <circle cx="20" cy="20" r="10" stroke-width="3" fill="#ECAD7A" />
+            </svg> 
+  
+            <a href="./jupiter.html" class="planet-name ff-sans-cond uppercase text-white letter-spacing-3">Jupiter</a>
+  
+          </div>
 
-  Revolution Time
-  29.46 Years
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+        </li>
 
-  Radius
-  58,232 KM
+        <li>
+          <div class="planet-tabs">
+            <svg height="30" width="30">
+              <circle cx="20" cy="20" r="10" stroke-width="3" fill="#FCCB6B" />
+            </svg> 
+  
+            <a href="./saturn.html" class="planet-name ff-sans-cond uppercase text-white letter-spacing-3">Saturn</a>
+  
+          </div>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+        </li>
 
-  Average Temp.
-  -138°c
+        <li>
+          <div class="planet-tabs">
+            <svg height="30" width="30">
+              <circle cx="20" cy="20" r="10" stroke-width="3" fill="#65F0D5" />
+            </svg> 
+  
+            <a href="./uranus.html" class="planet-name ff-sans-cond uppercase text-white letter-spacing-3">Uranus</a>
+  
+          </div>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+        </li>
+
+        <li>
+          <div class="planet-tabs">
+            <svg height="30" width="30">
+              <circle cx="20" cy="20" r="10" stroke-width="3" fill="#497EFA" />
+            </svg> 
+  
+            <a href="./neptune.html" class="planet-name ff-sans-cond uppercase text-white letter-spacing-3">Neptune</a>
+  
+          </div>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="mbl-planet-name flex">
+      <button class="overview ff-sans-cond fs-500 uppercase letter-spacing-2">overview</button>
+      <button class="structure ff-sans-cond fs-500 uppercase letter-spacing-2">structure</button>
+      <button class="surface ff-sans-cond fs-500 uppercase letter-spacing-2">surface</button>
+    </section>
+
+    <section class="planet-body">
+      <div class="planet-img flex">
+        <img src="./assets/planet-saturn.svg" class="saturn" alt="saturn">
+      </div>
+
+      <section class="planet-infos flex">
+
+        <div class="planet-infos-body flex">
+          <h2 class="ff-serif fs-800 uppercase">Saturn</h2>
+  
+          <p class="overview ff-sans-normal fs-600">
+            Saturn is the sixth planet from the Sun and the second-largest in the Solar 
+            System, after Jupiter. It is a gas giant with an average radius of about 
+            nine and a half times that of Earth. It only has one-eighth the average 
+            density of Earth.
+          </p>
+  
+          <p class="structure ff-sans-normal fs-600" style="display:none">
+            Despite consisting mostly of hydrogen and helium, most of Saturn's mass 
+            is not in the gas phase, because hydrogen becomes a non-ideal liquid 
+            when the density is above 0.01 g/cm3, which is reached at a radius 
+            containing 99.9% of Saturn's mass.
+          </p>
+  
+          <p class="surface ff-sans-normal fs-600" style="display:none">
+            The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% 
+            helium by volume. The planet's most famous feature is its prominent ring 
+            system, which is composed mostly of ice particles with a smaller amount 
+            of rocky debris and dust. 
+          </p>
+  
+          <p class="overview-src">
+            <span class="ff-sans-normal fs-600">Source: </span>
+            <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Saturn" target="_blank">Wikipedia</a>
+            <img src="./assets/icon-source.svg" alt="planet information">
+          </p>
+  
+          <p class="structure-src" style="display:none">
+            <span class="ff-sans-normal fs-600">Source: </span>
+            <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Saturn#Internal_structure" target="_blank">Wikipedia</a>
+            <img src="./assets/icon-source.svg" alt="source to internal structure">
+          </p>
+  
+          <p class="surface-src" style="display:none">
+            <span class="ff-sans-normal fs-600">Source: </span>
+            <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Saturn#Atmosphere" target="_blank">Wikipedia</a>
+            <img src="./assets/icon-source.svg" alt="source to surface geology">
+          </p>
+        </div>
+
+        <section class="tbldsk-planet-name flex">
+          <button class="overview ff-sans-cond fs-500 uppercase">
+            <span>01</span> 
+            overview
+          </button>
+    
+          <button class="structure ff-sans-cond fs-500 uppercase">
+            <span>02</span>
+            internal structure</button>
+    
+          <button class="surface ff-sans-cond fs-500 uppercase">
+            <span>03</span>
+            surface geology</button>
+        </section>  
+      </section>
+      
+    </section>
+
+    <section class="planet-stats flex ">
+      <p class="rotation flex ff-serif uppercase">
+        <span class="ff-sans-cond fs-500 letter-spacing-3">rotation time</span>
+        10.8 Hours
+      </p>
+      <p class="revolution flex ff-serif uppercase">
+        <span class="ff-sans-cond fs-500 letter-spacing-3">revolution time</span>
+        29.46 Years
+      </p>
+      <p class="radius flex ff-serif uppercase">
+        <span class="ff-sans-cond fs-500 letter-spacing-3">radius</span>
+        58,232 KM
+      </p>
+      <p class="ave-temp flex ff-serif uppercase">
+        <span class="ff-sans-cond fs-500 letter-spacing-3">average temp.</span>
+        -138°c
+      </p>
+    </section>
+  
+  </main>
 </body>
 </html>
