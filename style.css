@@ -287,7 +287,6 @@ body {
     width: 28.7rem;
 }
 
-
 .planet-infos {
     flex-direction: column;
     justify-content: center;
@@ -356,7 +355,8 @@ body {
     margin-right: 1.0625rem;
 }
 
-.tbldsk-planet-name button:focus {
+.tbldsk-planet-name button:focus,
+.tbldsk-planet-name > [aria-selected="true"] {
     cursor: pointer;
     background: hsl( var(--clr-cyan));
 }
