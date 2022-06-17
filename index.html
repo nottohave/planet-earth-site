@@ -20,6 +20,7 @@
   
   <!-- JS file -->
   <script src="./starter-code/javascript-files/navigation.js" defer></script>
+  <script src="./starter-code/javascript-files/planet-tabs.js" defer></script>
 
   <title>Frontend Mentor | Planets fact site</title>
 </head>
@@ -149,9 +150,9 @@
 
   <main>
     <section class="mbl-planet-name flex">
-      <button class="overview ff-sans-cond fs-500 uppercase letter-spacing-2">overview</button>
-      <button class="structure ff-sans-cond fs-500 uppercase letter-spacing-2">structure</button>
-      <button class="surface ff-sans-cond fs-500 uppercase letter-spacing-2">surface</button>
+      <button aria-selected="true" class="ff-sans-cond fs-500 uppercase letter-spacing-2" id="overview-btn">overview</button>
+      <button aria-selected="false" class="ff-sans-cond fs-500 uppercase letter-spacing-2" id="structure-btn">structure</button>
+      <button aria-selected="false" class="ff-sans-cond fs-500 uppercase letter-spacing-2" id="surface-btn">surface</button>
     </section>
 
     <section class="planet-body">
@@ -161,65 +162,66 @@
 
       <section class="planet-infos flex">
 
-        <div class="planet-infos-body flex">
+        <article class="planet-infos-body flex">
           <h2 class="ff-serif fs-800 uppercase">Mercury</h2>
   
-          <p class="overview ff-sans-normal fs-600">
+          <p class="ff-sans-normal fs-600" id="overview">
             Mercury is the smallest planet in the Solar System and the closest 
             to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
             shortest of all the Sun's planets. Mercury is one of four terrestrial 
             planets in the Solar System, and is a rocky body like Earth.
           </p>
   
-          <p class="structure ff-sans-normal fs-600" style="display:none">
+          <p class="ff-sans-normal fs-600" id="structure">
             Mercury appears to have a solid silicate crust and mantle overlying a 
             solid, iron sulfide outer core layer, a deeper liquid core layer, and 
             a solid inner core. The planet's density is the second highest in the 
             Solar System at 5.427 g/cm3 , only slightly less than Earth's density.
           </p>
   
-          <p class="surface ff-sans-normal fs-600" style="display:none">
+          <p class="ff-sans-normal fs-600" id="surface">
             Mercury's surface is similar in appearance to that of the Moon, showing 
             extensive mare-like plains and heavy cratering, indicating that it has 
             been geologically inactive for billions of years. It is more heterogeneous 
             than either Mars's or the Moon's.
           </p>
   
-          <p class="overview-src">
+          <p class="overview-src" id="overview">
             <span class="ff-sans-normal fs-600">Source: </span>
             <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Mercury_(planet)" target="_blank">Wikipedia</a>
             <img src="./starter-code/assets/icon-source.svg" alt="source to the planet">
           </p>
   
-          <p class="structure-src" style="display:none">
+          <p class="structure-src" id="structure">
             <span class="ff-sans-normal fs-600">Source: </span>
             <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" target="_blank">Wikipedia</a>
             <img src="./starter-code/assets/icon-source.svg" alt="source to the planet">
           </p>
   
-          <p class="surface-src" style="display:none">
+          <p class="surface-src" id="surface">
             <span class="ff-sans-normal fs-600">Source: </span>
             <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" target="_blank">Wikipedia</a>
             <img src="./starter-code/assets/icon-source.svg" alt="source to the planet">
           </p>
-        </div>
+        </article>
 
         <section class="tbldsk-planet-name flex">
-          <button class="overview ff-sans-cond fs-500 uppercase">
+          <button class="overview ff-sans-cond fs-500 uppercase"
+          aria-selected="true" role="tab" aria-controls="overview" tabindex="0">
             <span>01</span> 
             overview
           </button>
     
-          <button class="structure ff-sans-cond fs-500 uppercase">
+          <button class="structure ff-sans-cond fs-500 uppercase"
+          aria-selected="false" role="tab" aria-controls="structure" tabindex="-1">
             <span>02</span>
             internal structure</button>
     
-          <button class="surface ff-sans-cond fs-500 uppercase">
+          <button class="surface ff-sans-cond fs-500 uppercase"
+          aria-selected="false" role="tab" aria-controls="surface" tabindex="-1">
             <span>03</span>
             surface geology</button>
-        </section>  
-
-  
+        </section> 
       </section>
   
       
