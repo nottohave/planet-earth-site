@@ -1,10 +1,12 @@
-// set active state for aria selected first
-// click > select the button > highlight the button > unhighlight other buttons
-// hide the contents that are not selected
-// show the contents that are selected
-
+const overview = document.querySelector("#overview");
+const structure = document.querySelector("#structure");
+const surface = document.querySelector("#surface");
+const planetInfosBody = document.querySelectorAll(".planet-infos-body p");
 const tab = document.querySelectorAll('[role="tab"]');
 
+for (i = 0; i < planetInfosBody.length; i++) {
+    planetInfosBody[i].setAttribute("hidden", "true");
+}
 
 // create click function for all button with role tab
 tab.forEach(function(tab) {
