@@ -1,6 +1,3 @@
-const overview = document.querySelector("#overview");
-const structure = document.querySelector("#structure");
-const surface = document.querySelector("#surface");
 const planetInfosBody = document.querySelectorAll(".planet-infos-body p");
 const tab = document.querySelectorAll('[role="tab"]');
 
@@ -14,11 +11,18 @@ tab.forEach(function(tab) {
 function clickOnTab(click) {
     const targetClick = click.target;
     
-    // for (i = 0; i < planetInfosBody.length; i++) {
-    //     planetInfosBody[i].setAttribute("hidden", "true");
-    // }    
+    for (i = 0; i < planetInfosBody.length; i++) {
+        planetInfosBody[i].setAttribute("hidden", "true");
+    }    
 
-    
+    // when user click, obtain aria controls, select the id of the aria controls
+    // remove hidden attribute
+    const planet_info = targetClick.getAttribute("aria-controls");
+    const showPlanetInfo = document.querySelectorAll([`#${planet_info}`]);
+
+    for (i = 0; i< showPlanetInfo.length; i++) {
+        showPlanetInfo[i].removeAttribute("hidden");
+    }
 
     // unhighlight all buttons
     for (i = 0; i < tab.length; i++) {
