@@ -6,14 +6,11 @@ var planetBody = document.querySelector(".planet-body");
 primMob.addEventListener("click", function() {
     var dataVisible = primNav.getAttribute("data-visible");
 
-    console.log("click")
     // open the navigation upon clicked
     if (dataVisible !== "true") {
-        console.log("hello");
         primNav.setAttribute("data-visible", true);
         primMob.setAttribute("aria-expanded", true);
     } else {
-        console.log("working");
         primNav.setAttribute("data-visible", false);
         primMob.setAttribute("aria-expanded", false);
 
