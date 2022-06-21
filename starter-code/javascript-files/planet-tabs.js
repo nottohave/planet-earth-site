@@ -16,7 +16,7 @@ function clickOnTab(click) {
     }    
 
     // when user click, obtain aria controls, select the id of the aria controls
-    // remove hidden attribute
+    // remove hidden attribute on p and source with selected id name
     const planet_info = targetClick.getAttribute("aria-controls");
     const showPlanetInfo = document.querySelectorAll([`#${planet_info}`]);
 
