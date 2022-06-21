@@ -460,6 +460,11 @@ body {
         width: 16rem;
     }
 
+    .earth {
+        height: 17.8rem;
+        width: 17.8rem;
+    }
+
     .planet-infos {
         flex-direction: row;
         width: unset;
