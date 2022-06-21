@@ -20,6 +20,7 @@
   
   <!-- JS file -->
   <script src="./javascript-files/navigation.js" defer></script>
+  <script src="./javascript-files/planet-tabs.js" defer></script>
   
   <title>Frontend Mentor | Planets fact site</title>
 </head>
@@ -148,9 +149,9 @@
 
   <main>
     <section class="mbl-planet-name flex">
-      <button class="overview ff-sans-cond fs-500 uppercase letter-spacing-2">overview</button>
-      <button class="structure ff-sans-cond fs-500 uppercase letter-spacing-2">structure</button>
-      <button class="surface ff-sans-cond fs-500 uppercase letter-spacing-2">surface</button>
+      <button aria-selected="true" class="ff-sans-cond fs-500 uppercase letter-spacing-2" id="overview-btn">overview</button>
+      <button aria-selected="false" class="ff-sans-cond fs-500 uppercase letter-spacing-2" id="structure-btn">structure</button>
+      <button aria-selected="false" class="ff-sans-cond fs-500 uppercase letter-spacing-2" id="surface-btn">surface</button>
     </section>
 
     <section class="planet-body">
@@ -163,60 +164,63 @@
         <div class="planet-infos-body flex">
           <h2 class="ff-serif fs-800 uppercase">Saturn</h2>
   
-          <p class="overview ff-sans-normal fs-600">
+          <p class="ff-sans-normal fs-600" aria-controls="overview" id="overview">
             Saturn is the sixth planet from the Sun and the second-largest in the Solar 
             System, after Jupiter. It is a gas giant with an average radius of about 
             nine and a half times that of Earth. It only has one-eighth the average 
             density of Earth.
           </p>
   
-          <p class="structure ff-sans-normal fs-600" style="display:none">
+          <p hidden class="ff-sans-normal fs-600" aria-controls="structure" id="structure">
             Despite consisting mostly of hydrogen and helium, most of Saturn's mass 
             is not in the gas phase, because hydrogen becomes a non-ideal liquid 
             when the density is above 0.01 g/cm3, which is reached at a radius 
             containing 99.9% of Saturn's mass.
           </p>
   
-          <p class="surface ff-sans-normal fs-600" style="display:none">
+          <p hidden class="ff-sans-normal fs-600" aria-controls="surface" id="surface">
             The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% 
             helium by volume. The planet's most famous feature is its prominent ring 
             system, which is composed mostly of ice particles with a smaller amount 
             of rocky debris and dust. 
           </p>
   
-          <p class="overview-src">
+          <p class="overview-src ff-sans-normal fs-600" id="overview">
             <span class="ff-sans-normal fs-600">Source: </span>
             <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Saturn" target="_blank">Wikipedia</a>
             <img src="./assets/icon-source.svg" alt="planet information">
           </p>
   
-          <p class="structure-src" style="display:none">
+          <p hidden ss="structure-src ff-sans-normal fs-600" id="structure">
             <span class="ff-sans-normal fs-600">Source: </span>
             <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Saturn#Internal_structure" target="_blank">Wikipedia</a>
             <img src="./assets/icon-source.svg" alt="source to internal structure">
           </p>
   
-          <p class="surface-src" style="display:none">
+          <p hidden ss="structure-src ff-sans-normal fs-600" id="surface">
             <span class="ff-sans-normal fs-600">Source: </span>
             <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Saturn#Atmosphere" target="_blank">Wikipedia</a>
             <img src="./assets/icon-source.svg" alt="source to surface geology">
           </p>
         </div>
 
-        <section class="tbldsk-planet-name flex">
-          <button class="overview ff-sans-cond fs-500 uppercase">
+        <section class="tbldsk-planet-name earth-grp-btn flex">
+          <button class="overview ff-sans-cond fs-500 uppercase"
+          aria-selected="true" role="tab" aria-controls="overview" tabindex="0">
             <span>01</span> 
             overview
           </button>
     
-          <button class="structure ff-sans-cond fs-500 uppercase">
+          <button class="structure ff-sans-cond fs-500 uppercase"
+          aria-selected="false" role="tab" aria-controls="structure" tabindex="-1">
             <span>02</span>
             internal structure</button>
     
-          <button class="surface ff-sans-cond fs-500 uppercase">
+          <button class="surface ff-sans-cond fs-500 uppercase"
+          aria-selected="false" role="tab" aria-controls="surface" tabindex="-1">
             <span>03</span>
             surface geology</button>
-        </section>  
+        </section> 
       </section>
       
     </section>
