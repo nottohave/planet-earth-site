@@ -406,7 +406,6 @@ body {
         height: 10rem;
         flex-direction: column;
         justify-content: center;
-        /* align-items: center; */
     }
 
     .primary-header-nav {
@@ -422,7 +421,6 @@ body {
         width: 100%;
         text-align: center;
         font-size: 1.75rem;
-        /* padding: 1rem 0 0 0; */
     }
 
     .mbl-planet-name {
@@ -431,7 +429,6 @@ body {
 
     .primary-navigation {
         width: 100vw;
-        /* gap: 1.5rem; */
     }
 
     .underline-indicators > * {
@@ -450,7 +447,6 @@ body {
     .planet-img {
         justify-content: center;
         align-items: center;
-
         height: 26.8125rem;
     }
     
@@ -507,7 +503,7 @@ body {
 
     .primary-navigation {
         --underline-gap: 0.75rem;
-        padding: 2.75rem 1.5rem 0rem 1.5rem;
+        padding: 0rem 1.5rem 0rem 1.5rem;
         list-style: none;
         flex-direction: column;
         position: fixed;
@@ -523,6 +519,10 @@ body {
     .primary-navigation[data-visible="true"] {
         transform: translateY(0);
         transition: 0.5s;
+    }
+
+    .primary-header {
+        height: unset;
     }
 
     .primary-header-nav {
@@ -582,6 +582,7 @@ body {
     }
 
     .mbl-planet-name {
+        display: flex;
         justify-content: space-between;
         padding-inline: 1.5rem;
         height: 3.0625rem;
