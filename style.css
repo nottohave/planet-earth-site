@@ -297,7 +297,6 @@ body {
     text-align: left;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     height: min-content;
 }
 
@@ -335,7 +334,6 @@ body {
     width: 17.5625rem;
     flex-direction: column;
     justify-content: center;
-    
 }
 
 .tbldsk-planet-name button {
@@ -355,10 +353,28 @@ body {
     margin-right: 1.0625rem;
 }
 
-.tbldsk-planet-name button:focus,
-.tbldsk-planet-name > [aria-selected="true"] {
+.mer-grp-btn button:focus,
+.mer-grp-btn > .overview [aria-selected="true"],
+.mer-grp-btn > .structure [aria-selected="true"],
+.mer-grp-btn > .surface [aria-selected="true"] {
     cursor: pointer;
     background: hsl( var(--clr-cyan));
+}
+
+.venus-grp-btn button:focus,
+.venus-grp-btn > .overview [aria-selected="true"],
+.venus-grp-btn > .structure [aria-selected="true"],
+.venus-grp-btn > .surface [aria-selected="true"] {
+    cursor: pointer;
+    background: hsl( var(--clr-yellow));
+}
+
+.earth-grp-btn button:focus,
+.earth-grp-btn > .overview [aria-selected="true"],
+.earth-grp-btn > .structure [aria-selected="true"],
+.earth-grp-btn > .surface [aria-selected="true"] {
+    cursor: pointer;
+    background: hsl( var(--clr-blue));
 }
 
 .tbldsk-planet-name button:hover {
