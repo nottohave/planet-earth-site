@@ -20,6 +20,7 @@
   
   <!-- JS file -->
   <script src="./javascript-files/navigation.js" defer></script>
+  <script src="./javascript-files/planet-tabs.js" defer></script>
   
   <title>Frontend Mentor | Planets fact site</title>
 </head>
@@ -148,9 +149,9 @@
 
   <main>
     <section class="mbl-planet-name flex">
-      <button class="overview ff-sans-cond fs-500 uppercase letter-spacing-2">overview</button>
-      <button class="structure ff-sans-cond fs-500 uppercase letter-spacing-2">structure</button>
-      <button class="surface ff-sans-cond fs-500 uppercase letter-spacing-2">surface</button>
+      <button aria-selected="true" class="ff-sans-cond fs-500 uppercase letter-spacing-2" id="overview-btn">overview</button>
+      <button aria-selected="false" class="ff-sans-cond fs-500 uppercase letter-spacing-2" id="structure-btn">structure</button>
+      <button aria-selected="false" class="ff-sans-cond fs-500 uppercase letter-spacing-2" id="surface-btn">surface</button>
     </section>
 
     <section class="planet-body">
@@ -163,58 +164,61 @@
         <div class="planet-infos-body flex">
           <h2 class="ff-serif fs-800 uppercase">Neptune</h2>
   
-          <p class="overview ff-sans-normal fs-600">
+          <p class="ff-sans-normal fs-600" aria-controls="overview" id="overview">
             Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar 
             System, it is the fourth-largest planet by diameter, the third-most-massive planet, 
             and the densest giant planet. It is 17 times the mass of Earth, more massive than 
             its near-twin Uranus.
           </p>
   
-          <p class="structure ff-sans-normal fs-600" style="display:none">
+          <p hidden class="ff-sans-normal fs-600" aria-controls="structure" id="structure">
             Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% 
             to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. 
             Increasing concentrations of methane, ammonia and water are found in the lower regions.
           </p>
   
-          <p class="surface ff-sans-normal fs-600" style="display:none">
+          <p hidden class="ff-sans-normal fs-600" aria-controls="surface" id="surface">
             Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also 
             present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in 
             the red and infrared portion of the spectrum.
           </p>
   
-          <p class="overview-src">
+          <p class="overview-src ff-sans-normal fs-600" id="overview">
             <span class="ff-sans-normal fs-600">Source: </span>
             <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Neptune" target="_blank">Wikipedia</a>
             <img src="./assets/icon-source.svg" alt="planet information">
           </p>
   
-          <p class="structure-src" style="display:none">
+          <p hidden ss="structure-src ff-sans-normal fs-600" id="structure">
             <span class="ff-sans-normal fs-600">Source: </span>
             <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Neptune#Internal_structure" target="_blank">Wikipedia</a>
             <img src="./assets/icon-source.svg" alt="source to internal structure">
           </p>
   
-          <p class="surface-src" style="display:none">
+          <p hidden ss="structure-src ff-sans-normal fs-600" id="surface">
             <span class="ff-sans-normal fs-600">Source: </span>
             <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Neptune#Atmosphere" target="_blank">Wikipedia</a>
             <img src="./assets/icon-source.svg" alt="source to surface geology">
           </p>
         </div>
 
-        <section class="tbldsk-planet-name flex">
-          <button class="overview ff-sans-cond fs-500 uppercase">
+        <section class="tbldsk-planet-name earth-grp-btn flex">
+          <button class="overview ff-sans-cond fs-500 uppercase"
+          aria-selected="true" role="tab" aria-controls="overview" tabindex="0">
             <span>01</span> 
             overview
           </button>
     
-          <button class="structure ff-sans-cond fs-500 uppercase">
+          <button class="structure ff-sans-cond fs-500 uppercase"
+          aria-selected="false" role="tab" aria-controls="structure" tabindex="-1">
             <span>02</span>
             internal structure</button>
     
-          <button class="surface ff-sans-cond fs-500 uppercase">
+          <button class="surface ff-sans-cond fs-500 uppercase"
+          aria-selected="false" role="tab" aria-controls="surface" tabindex="-1">
             <span>03</span>
             surface geology</button>
-        </section>  
+        </section> 
       </section>
       
     </section>
