@@ -148,9 +148,9 @@
 
   <main>
     <section class="mbl-planet-name flex">
-      <button class="overview ff-sans-cond fs-500 uppercase letter-spacing-2">overview</button>
-      <button class="structure ff-sans-cond fs-500 uppercase letter-spacing-2">structure</button>
-      <button class="surface ff-sans-cond fs-500 uppercase letter-spacing-2">surface</button>
+      <button aria-selected="true" class="ff-sans-cond fs-500 uppercase letter-spacing-2" id="overview-btn">overview</button>
+      <button aria-selected="false" class="ff-sans-cond fs-500 uppercase letter-spacing-2" id="structure-btn">structure</button>
+      <button aria-selected="false" class="ff-sans-cond fs-500 uppercase letter-spacing-2" id="surface-btn">surface</button>
     </section>
 
     <section class="planet-body">
@@ -163,21 +163,21 @@
         <div class="planet-infos-body flex">
           <h2 class="ff-serif fs-800 uppercase">Earth</h2>
   
-          <p class="overview ff-sans-normal fs-600">
+          <p class="ff-sans-normal fs-600" aria-controls="overview" id="overview">
             Third planet from the Sun and the only known planet to harbor life. 
             About 29.2% of Earth's surface is land with remaining 70.8% is 
             covered with water. Earth's distance from the Sun, physical properties 
             and geological history have allowed life to evolve and thrive.
           </p>
   
-          <p class="structure ff-sans-normal fs-600" style="display:none">
+          <p class="ff-sans-normal fs-600" aria-controls="overview" id="overview">
             Earth's interior, like that of the other terrestrial planets, is divided 
             into layers by their chemical or physical (rheological) properties. The 
             outer layer is a chemically distinct silicate solid crust, which is 
             underlain by a highly viscous solid mantle.
           </p>
   
-          <p class="surface ff-sans-normal fs-600" style="display:none">
+          <p class="ff-sans-normal fs-600" aria-controls="overview" id="overview">
             The total surface area of Earth is about 510 million km2. The continental 
             crust consists of lower density material such as the igneous rocks granite 
             and andesite. Less common is basalt, a denser volcanic rock that is the 
