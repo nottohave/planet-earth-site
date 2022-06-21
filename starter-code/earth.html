@@ -20,7 +20,8 @@
   
   <!-- JS file -->
   <script src="./javascript-files/navigation.js" defer></script>
-  
+  <script src="./javascript-files/planet-tabs.js" defer></script>
+
   <title>Frontend Mentor | Planets fact site</title>
 </head>
 <body>
@@ -160,7 +161,7 @@
 
       <section class="planet-infos flex">
 
-        <div class="planet-infos-body flex">
+        <article class="planet-infos-body flex">
           <h2 class="ff-serif fs-800 uppercase">Earth</h2>
   
           <p class="ff-sans-normal fs-600" aria-controls="overview" id="overview">
@@ -170,53 +171,56 @@
             and geological history have allowed life to evolve and thrive.
           </p>
   
-          <p class="ff-sans-normal fs-600" aria-controls="overview" id="overview">
+          <p hidden class="ff-sans-normal fs-600" aria-controls="structure" id="structure">
             Earth's interior, like that of the other terrestrial planets, is divided 
             into layers by their chemical or physical (rheological) properties. The 
             outer layer is a chemically distinct silicate solid crust, which is 
             underlain by a highly viscous solid mantle.
           </p>
   
-          <p class="ff-sans-normal fs-600" aria-controls="overview" id="overview">
+          <p hidden class="ff-sans-normal fs-600" aria-controls="surface" id="surface">
             The total surface area of Earth is about 510 million km2. The continental 
             crust consists of lower density material such as the igneous rocks granite 
             and andesite. Less common is basalt, a denser volcanic rock that is the 
             primary constituent of the ocean floors.
           </p>
   
-          <p class="overview-src ff-sans-normal fs-600" aria-controls="overview" id="overview">
+          <p class="overview-src ff-sans-normal fs-600" id="overview">
             <span class="ff-sans-normal fs-600">Source: </span>
             <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Earth" target="_blank">Wikipedia</a>
             <img src="./assets/icon-source.svg" alt="planet information">
           </p>
   
-          <p class="structure-src" style="display:none">
+          <p hidden ss="structure-src ff-sans-normal fs-600" id="structure">
             <span class="ff-sans-normal fs-600">Source: </span>
             <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Earth#Internal_structure" target="_blank">Wikipedia</a>
             <img src="./assets/icon-source.svg" alt="source to internal structure">
           </p>
   
-          <p class="surface-src" style="display:none">
+          <p hidden ss="structure-src ff-sans-normal fs-600" id="surface">
             <span class="ff-sans-normal fs-600">Source: </span>
             <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Earth#Surface" target="_blank">Wikipedia</a>
             <img src="./assets/icon-source.svg" alt="source to surface geology">
           </p>
-        </div>
+        </article>
 
         <section class="tbldsk-planet-name flex">
-          <button class="overview ff-sans-cond fs-500 uppercase">
+          <button class="overview ff-sans-cond fs-500 uppercase"
+          aria-selected="true" role="tab" aria-controls="overview" tabindex="0">
             <span>01</span> 
             overview
           </button>
     
-          <button class="structure ff-sans-cond fs-500 uppercase">
+          <button class="structure ff-sans-cond fs-500 uppercase"
+          aria-selected="false" role="tab" aria-controls="structure" tabindex="-1">
             <span>02</span>
             internal structure</button>
     
-          <button class="surface ff-sans-cond fs-500 uppercase">
+          <button class="surface ff-sans-cond fs-500 uppercase"
+          aria-selected="false" role="tab" aria-controls="surface" tabindex="-1">
             <span>03</span>
             surface geology</button>
-        </section>  
+        </section> 
       </section>
       
     </section>
