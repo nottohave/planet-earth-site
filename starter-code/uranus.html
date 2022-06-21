@@ -20,6 +20,7 @@
   
   <!-- JS file -->
   <script src="./javascript-files/navigation.js" defer></script>
+  <script src="./javascript-files/planet-tabs.js" defer></script>
   
   <title>Frontend Mentor | Planets fact site</title>
 </head>
@@ -148,9 +149,9 @@
 
   <main>
     <section class="mbl-planet-name flex">
-      <button class="overview ff-sans-cond fs-500 uppercase letter-spacing-2">overview</button>
-      <button class="structure ff-sans-cond fs-500 uppercase letter-spacing-2">structure</button>
-      <button class="surface ff-sans-cond fs-500 uppercase letter-spacing-2">surface</button>
+      <button aria-selected="true" class="ff-sans-cond fs-500 uppercase letter-spacing-2" id="overview-btn">overview</button>
+      <button aria-selected="false" class="ff-sans-cond fs-500 uppercase letter-spacing-2" id="structure-btn">structure</button>
+      <button aria-selected="false" class="ff-sans-cond fs-500 uppercase letter-spacing-2" id="surface-btn">surface</button>
     </section>
 
     <section class="planet-body">
@@ -163,59 +164,62 @@
         <div class="planet-infos-body flex">
           <h2 class="ff-serif fs-800 uppercase">Uranus</h2>
   
-          <p class="overview ff-sans-normal fs-600">
+          <p class="ff-sans-normal fs-600" aria-controls="overview" id="overview">
             Uranus is the seventh planet from the Sun. Its name is a reference to the 
             Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather 
             of Ares. It has the third-largest planetary radius and fourth-largest planetary 
             mass in the Solar System.
           </p>
   
-          <p class="structure ff-sans-normal fs-600" style="display:none">
+          <p hidden class="ff-sans-normal fs-600" aria-controls="structure" id="structure">
             The standard model of Uranus's structure is that it consists of three layers: a 
             rocky (silicate/iron-nickel) core in the centre, an icy mantle in the middle and 
             an outer gaseous hydrogen/helium envelope. The core is relatively small, with a 
             mass of only 0.55 Earth masses.
           </p>
   
-          <p class="surface ff-sans-normal fs-600" style="display:none">
+          <p hidden class="ff-sans-normal fs-600" aria-controls="surface" id="surface">
             The composition of Uranus's atmosphere is different from its bulk, consisting mainly 
             of molecular hydrogen and helium. The helium molar fraction, i.e. the number of 
             helium atoms per molecule of gas, is 0.15±0.03 in the upper troposphere.
           </p>
   
-          <p class="overview-src">
+          <p class="overview-src ff-sans-normal fs-600" id="overview">
             <span class="ff-sans-normal fs-600">Source: </span>
             <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Uranus" target="_blank">Wikipedia</a>
             <img src="./assets/icon-source.svg" alt="planet information">
           </p>
   
-          <p class="structure-src" style="display:none">
+          <p hidden ss="structure-src ff-sans-normal fs-600" id="structure">
             <span class="ff-sans-normal fs-600">Source: </span>
             <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Uranus#Internal_structure" target="_blank">Wikipedia</a>
             <img src="./assets/icon-source.svg" alt="source to internal structure">
           </p>
   
-          <p class="surface-src" style="display:none">
+          <p hidden ss="structure-src ff-sans-normal fs-600" id="surface">
             <span class="ff-sans-normal fs-600">Source: </span>
             <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Uranus#Atmosphere" target="_blank">Wikipedia</a>
             <img src="./assets/icon-source.svg" alt="source to surface geology">
           </p>
         </div>
 
-        <section class="tbldsk-planet-name flex">
-          <button class="overview ff-sans-cond fs-500 uppercase">
+        <section class="tbldsk-planet-name earth-grp-btn flex">
+          <button class="overview ff-sans-cond fs-500 uppercase"
+          aria-selected="true" role="tab" aria-controls="overview" tabindex="0">
             <span>01</span> 
             overview
           </button>
     
-          <button class="structure ff-sans-cond fs-500 uppercase">
+          <button class="structure ff-sans-cond fs-500 uppercase"
+          aria-selected="false" role="tab" aria-controls="structure" tabindex="-1">
             <span>02</span>
             internal structure</button>
     
-          <button class="surface ff-sans-cond fs-500 uppercase">
+          <button class="surface ff-sans-cond fs-500 uppercase"
+          aria-selected="false" role="tab" aria-controls="surface" tabindex="-1">
             <span>03</span>
             surface geology</button>
-        </section>  
+        </section> 
       </section>
       
     </section>
