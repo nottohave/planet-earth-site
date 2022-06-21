@@ -20,6 +20,7 @@
   
   <!-- JS file -->
   <script src="./javascript-files/navigation.js" defer></script>
+  <script src="./javascript-files/planet-tabs.js" defer></script>
   
   <title>Frontend Mentor | Planets fact site</title>
 </head>
@@ -148,9 +149,9 @@
 
   <main>
     <section class="mbl-planet-name flex">
-      <button class="overview ff-sans-cond fs-500 uppercase letter-spacing-2">overview</button>
-      <button class="structure ff-sans-cond fs-500 uppercase letter-spacing-2">structure</button>
-      <button class="surface ff-sans-cond fs-500 uppercase letter-spacing-2">surface</button>
+      <button aria-selected="true" class="ff-sans-cond fs-500 uppercase letter-spacing-2" id="overview-btn">overview</button>
+      <button aria-selected="false" class="ff-sans-cond fs-500 uppercase letter-spacing-2" id="structure-btn">structure</button>
+      <button aria-selected="false" class="ff-sans-cond fs-500 uppercase letter-spacing-2" id="surface-btn">surface</button>
     </section>
 
     <section class="planet-body">
@@ -160,43 +161,43 @@
 
       <section class="planet-infos flex">
 
-        <div class="planet-infos-body flex">
+        <article class="planet-infos-body flex">
           <h2 class="ff-serif fs-800 uppercase">Venus</h2>
   
-          <p class="overview ff-sans-normal fs-600">
+          <p class="ff-sans-normal fs-600" aria-controls="overview" id="overview">
             Venus is the second planet from the Sun. It is named after the 
             Roman goddess of love and beauty. As the brightest natural object 
             in Earth's night sky after the Moon, Venus can cast shadows and 
             can be, on rare occasions, visible to the naked eye in broad daylight.
           </p>
   
-          <p class="structure ff-sans-normal fs-600" style="display:none">
+          <p hidden class="ff-sans-normal fs-600" aria-controls="structure" id="structure">
             The similarity in size and density between Venus and Earth suggests 
             they share a similar internal structure: a core, mantle, and crust. 
             Like that of Earth, Venusian core is most likely at least partially 
             liquid because the two planets have been cooling at about the same rate.
           </p>
   
-          <p class="surface ff-sans-normal fs-600" style="display:none">
+          <p hidden class="ff-sans-normal fs-600" aria-controls="surface" id="surface">
             Much of the Venusian surface appears to have been shaped by volcanic activity. 
             Venus has several times as many volcanoes as Earth, and it has 167 large 
             volcanoes that are over 100 km (60 mi) across. The only volcanic complex 
             of this size on Earth is the Big Island of Hawaii.
           </p>
   
-          <p class="overview-src">
+          <p class="overview-src ff-sans-normal fs-600" id="overview">
             <span class="ff-sans-normal fs-600">Source: </span>
             <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Mercury_(planet)" target="_blank">Wikipedia</a>
             <img src="./assets/icon-source.svg" alt="planet information">
           </p>
   
-          <p class="structure-src" style="display:none">
+          <p hidden ss="structure-src ff-sans-normal fs-600" id="structure">
             <span class="ff-sans-normal fs-600">Source: </span>
             <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" target="_blank">Wikipedia</a>
             <img src="./assets/icon-source.svg" alt="source to internal structure">
           </p>
   
-          <p class="surface-src" style="display:none">
+          <p hidden ss="structure-src ff-sans-normal fs-600" id="surface">
             <span class="ff-sans-normal fs-600">Source: </span>
             <a class="ff-sans-cond fs-700 text-white" href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" target="_blank">Wikipedia</a>
             <img src="./assets/icon-source.svg" alt="source to surface geology">
@@ -204,21 +205,22 @@
         </div>
 
         <section class="tbldsk-planet-name flex">
-          <button class="overview ff-sans-cond fs-500 uppercase">
+          <button class="overview ff-sans-cond fs-500 uppercase"
+          aria-selected="true" role="tab" aria-controls="overview" tabindex="0">
             <span>01</span> 
             overview
           </button>
     
-          <button class="structure ff-sans-cond fs-500 uppercase">
+          <button class="structure ff-sans-cond fs-500 uppercase"
+          aria-selected="false" role="tab" aria-controls="structure" tabindex="-1">
             <span>02</span>
             internal structure</button>
     
-          <button class="surface ff-sans-cond fs-500 uppercase">
+          <button class="surface ff-sans-cond fs-500 uppercase"
+          aria-selected="false" role="tab" aria-controls="surface" tabindex="-1">
             <span>03</span>
             surface geology</button>
-        </section>  
-
-  
+        </section> 
       </section>
   
       
