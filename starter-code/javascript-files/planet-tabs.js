@@ -1,7 +1,6 @@
 const planetInfosBody = document.querySelectorAll(".planet-infos-body p");
 const tab = document.querySelectorAll('[role="tab"]');
 
-
 // create click function for all button with role tab
 tab.forEach(function(tab) {
     tab.addEventListener('click', clickOnTab);
