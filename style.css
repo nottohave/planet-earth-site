@@ -377,6 +377,47 @@ body {
     background: hsl( var(--clr-blue));
 }
 
+.mars-grp-btn button:focus,
+.mars-grp-btn > .overview [aria-selected="true"],
+.mars-grp-btn > .structure [aria-selected="true"],
+.mars-grp-btn > .surface [aria-selected="true"] {
+    cursor: pointer;
+    background: hsl( var(--clr-orange));
+}
+
+
+.jupiter-grp-btn button:focus,
+.jupiter-grp-btn > .overview [aria-selected="true"],
+.jupiter-grp-btn > .structure [aria-selected="true"],
+.jupiter-grp-btn > .surface [aria-selected="true"] {
+    cursor: pointer;
+    background: hsl( var(--clr-orange));
+}
+
+.saturn-grp-btn button:focus,
+.saturn-grp-btn > .overview [aria-selected="true"],
+.saturn-grp-btn > .structure [aria-selected="true"],
+.saturn-grp-btn > .surface [aria-selected="true"] {
+    cursor: pointer;
+    background: hsl( var(--clr-brown));
+}
+
+.uranus-grp-btn button:focus,
+.uranus-grp-btn > .overview [aria-selected="true"],
+.uranus-grp-btn > .structure [aria-selected="true"],
+.uranus-grp-btn > .surface [aria-selected="true"] {
+    cursor: pointer;
+    background: hsl( var(--clr-mint));
+}
+
+.neptune-grp-btn button:focus,
+.neptune-grp-btn > .overview [aria-selected="true"],
+.neptune-grp-btn > .structure [aria-selected="true"],
+.neptune-grp-btn > .surface [aria-selected="true"] {
+    cursor: pointer;
+    background: hsl( var(--clr-blue));
+}
+
 .tbldsk-planet-name button:hover {
     cursor: pointer;
     background: hsl( var(--clr-grey));
@@ -481,6 +522,32 @@ body {
         width: 17.8rem;
     }
 
+    .mars {
+        height: 13.31rem;
+        width: 13.31rem;
+    }
+
+    .jupiter {
+        height: 23.1rem;
+        width: 23.1rem;
+    }
+
+    .saturn {
+        height: 26.4rem;
+        width: 26.4rem;
+    }
+
+    .uranus {
+        height: 18.1rem;
+        width: 18.1rem;
+    }
+
+    .neptune {
+        height: 17.81rem;
+        width: 17.81rem;
+    }
+
+
     .planet-infos {
         flex-direction: row;
         width: unset;
@@ -507,8 +574,6 @@ body {
         width: 10.25rem;
         font-size: 1.5rem;
     }
-
-
 }
 
 
@@ -655,6 +720,31 @@ body {
     .earth {
         height: 10.8125rem;
         width: 10.8125rem;
+    }
+
+    .mars {
+        height: 8.1rem;
+        width: 8.1rem;
+    }
+
+    .jupiter {
+        height: 14rem;
+        width: 14rem;
+    }
+
+    .saturn {
+        height: 16rem;
+        width: 16rem;
+    }
+
+    .uranus {
+        height: 11rem;
+        width: 11rem;
+    }
+
+    .neptune {
+        height: 10.8rem;
+        width: 10.8rem;
     }
 
     .planet-infos-body {
