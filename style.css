@@ -391,7 +391,7 @@ body {
 .jupiter-grp-btn > .structure [aria-selected="true"],
 .jupiter-grp-btn > .surface [aria-selected="true"] {
     cursor: pointer;
-    background: hsl( var(--clr-orange));
+    background: hsl( var(--clr-red));
 }
 
 .saturn-grp-btn button:focus,
@@ -690,8 +690,58 @@ body {
 
     .mbl-planet-name button:hover {
         cursor: pointer;
-        border-bottom: 4px #419EBB solid;
     }
+
+    .overview-MER:hover,
+    .structure-MER:hover,
+    .surface-MER:hover {
+        border-bottom: 4px hsl( var(--clr-cyan)) solid;
+    }
+
+    .overview-VEN:hover,
+    .structure-VEN:hover,
+    .surface-VEN:hover {
+        border-bottom: 4px hsl( var(--clr-yellow)) solid;
+    }
+
+    .overview-EAR:hover,
+    .structure-EAR:hover,
+    .surface-EAR:hover {
+        border-bottom: 4px hsl( var(--clr-blue)) solid;
+    }
+
+    .overview-MAR:hover,
+    .structure-MAR:hover,
+    .surface-MAR:hover {
+        border-bottom: 4px hsl( var(--clr-orange)) solid;
+    }
+
+    .overview-JUP:hover,
+    .structure-JUP:hover,
+    .surface-JUP:hover {
+        border-bottom: 4px hsl( var(--clr-red)) solid;
+    }
+
+    .overview-SAT:hover,
+    .structure-SAT:hover,
+    .surface-SAT:hover {
+        border-bottom: 4px hsl( var(--clr-brown)) solid;
+    }
+
+    .overview-URA:hover,
+    .structure-URA:hover,
+    .surface-URA:hover {
+        border-bottom: 4px hsl( var(--clr-mint)) solid;
+    }
+
+    .overview-NEP:hover,
+    .structure-NEP:hover,
+    .surface-NEP:hover {
+        border-bottom: 4px hsl( var(--clr-blue)) solid;
+    }
+
+
+
 
     /* PLANET BODY */
 
@@ -776,3 +826,14 @@ body {
 }
 
 
+/* 
+mercury: cyan 
+venus: yellow
+earth: blue
+mars: orange
+jup: red
+saturn: brown
+uranus: mint
+neptune: blue
+
+*/
