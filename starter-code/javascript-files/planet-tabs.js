@@ -1,5 +1,7 @@
 const planetInfosBody = document.querySelectorAll(".planet-infos-body p");
 const tab = document.querySelectorAll('[role="tab"]');
+const planet_img = document.querySelectorAll('.planet-img img');
+
 
 // create click function for all button with role tab
 tab.forEach(function(tab) {
