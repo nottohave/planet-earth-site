@@ -597,6 +597,11 @@ body {
         width: 17.81rem;
     }
 
+    .planet-img img:last-child {
+        width: 8.2rem;
+        height: 10.4rem;    
+        bottom: 10px;
+    }
 
     .planet-infos {
         flex-direction: row;
@@ -790,9 +795,6 @@ body {
         border-bottom: 4px hsl( var(--clr-blue)) solid;
     }
 
-
-
-
     /* PLANET BODY */
 
     .planet-body {
@@ -845,6 +847,12 @@ body {
     .neptune {
         height: 10.8rem;
         width: 10.8rem;
+    }
+
+    .planet-img img:last-child {
+        width: 5.2rem;
+        height: 6.4rem;    
+        bottom: 70px;
     }
 
     .planet-infos-body {
