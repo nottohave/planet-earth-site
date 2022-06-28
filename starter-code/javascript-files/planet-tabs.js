@@ -1,6 +1,8 @@
 const planetInfosBody = document.querySelectorAll(".planet-infos-body p");
 const tab = document.querySelectorAll('[role="tab"]');
-const planet_img = document.querySelectorAll('.planet-img img')
+const planet_img = document.querySelectorAll('.planet-img img');
+const surface = document.querySelector('.surface-img');
+const overview = document.querySelector('.overview-img');
 
 // create click function for all button with role tab
 tab.forEach(function(tab) {
@@ -29,10 +31,18 @@ function clickOnTab(click) {
         showPlanetInfo[i].removeAttribute("hidden");
     }
 
+    // if the user select surface, remove hidden attribute for overview and surface
+    if (planet_info === 'surface') {
+        surface.removeAttribute("hidden");
+        overview.removeAttribute("hidden");
+    }    
+    
+
     // unhighlight all buttons
     for (i = 0; i < tab.length; i++) {
         tab[i].setAttribute("aria-selected", false);
     }
+
 
 }
 
