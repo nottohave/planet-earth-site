@@ -1,7 +1,6 @@
 const planetInfosBody = document.querySelectorAll(".planet-infos-body p");
 const tab = document.querySelectorAll('[role="tab"]');
-const planet_img = document.querySelectorAll('.planet-img img');
-
+const planet_img = document.querySelectorAll('.planet-img img')
 
 // create click function for all button with role tab
 tab.forEach(function(tab) {
@@ -15,6 +14,11 @@ function clickOnTab(click) {
     for (i = 0; i < planetInfosBody.length; i++) {
         planetInfosBody[i].setAttribute("hidden", "true");
     }    
+
+    for (i = 0; i < planet_img.length; i++) {
+        planet_img[i].setAttribute("hidden", "true");
+    }
+
 
     // when user click, obtain aria controls, select the id of the aria controls
     // remove hidden attribute on p and source with selected id name
