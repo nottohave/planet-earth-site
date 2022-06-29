@@ -13,7 +13,6 @@ This is a solution to the [Planets fact site challenge on Frontend Mentor](https
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
 
@@ -29,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./preview.jpg)
 
 
 ### Links
@@ -50,7 +49,7 @@ Users should be able to:
 
 ### What I learned
 
-- I learned how to make navigation and planet tabs in javascript files. I learned to construct CSS styled components.
+- I learned how to make navigation and planet tabs in javascript files. I learned to construct CSS styled components. The challenging part is where I have to construct the structure of HTML and CSS for mobile, tablet and desktop. Keeping the design to flow through and not break out is difficult. Also, I had to look up several sources to make a function in planet-tabs.js doing two tasks. One is to switch paragraph to structure, and the other is hide and display the image. 
 
 ```html
   <p class="overview-src ff-sans-normal fs-600" id="overview">
@@ -84,11 +83,6 @@ Users should be able to:
 
 ```
 
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
 ## Acknowledgments
 
