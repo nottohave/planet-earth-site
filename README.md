@@ -2,6 +2,8 @@
 
 This is a solution to the [Planets fact site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
+[Links](#links)
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -34,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://nottohave.github.io/planet-earth-site/)
 
 ## My process
 
@@ -86,4 +88,4 @@ Users should be able to:
 
 ## Acknowledgments
 
-Thank you [@frontendmentor]() for creating this project.
+Thank you [@frontendmentor](https://www.frontendmentor.io) for creating this project.
