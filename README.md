@@ -51,7 +51,14 @@ Users should be able to:
 
 ### What I learned
 
-- I learned how to make navigation and planet tabs in javascript files. I learned to construct CSS styled components. The challenging part is where I have to construct the structure of HTML and CSS for mobile, tablet and desktop. Keeping the design to flow through and not break out is difficult. Also, I had to look up several sources to make a function in planet-tabs.js doing two tasks. One is to switch paragraph to structure, and the other is hide and display the image. 
+- What did you find difficult while building the project?
+I learned how to make navigation and planet tabs in javascript files. I learned to construct CSS styled components. The challenging part is where I have to construct the structure of HTML and CSS for mobile, tablet and desktop. Keeping the design to flow through and not break out is difficult. Also, I had to look up several sources to make a function in planet-tabs.js doing two tasks. One is to switch paragraph to structure, and the other is hide and display the image. 
+
+- Which areas of your code are you unsure of?
+I was unsure on the media max and min width. I tend to go for mobile-first, however, when I started on this project, it was built from desktop to mobile. I also confused on setting width and height of either p or a container. This is to allow the content to grow appropriately from a small to a large screen size.
+
+- Do you have any questions about best practices?
+Best community (I'm in Frontendmentor's Slack), Youtube channel or resources to ask questions when Google does not have answer to specific questions?
 
 ```html
   <p class="overview-src ff-sans-normal fs-600" id="overview">
