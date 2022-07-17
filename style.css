@@ -280,6 +280,7 @@ body {
 }
 
 .planet-body {
+    background: url(./starter-code/assets/background-stars.svg);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
